@@ -9,8 +9,8 @@ body {
   flex-flow: column nowrap;
   align-items: center;
 }
-body{
-  gap:3rem;
+body {
+  gap: 3rem;
 }
 
 * {
@@ -33,5 +33,9 @@ header {
 }
 
 main {
-  width: 100%;
+  width: 1024px;
+}
+
+footer {
+  width: 1024px;
 }

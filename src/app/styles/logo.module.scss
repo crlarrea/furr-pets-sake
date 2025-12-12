@@ -2,6 +2,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  flex: 0 0 350px;
+  justify-content: flex-start;
   h1 {
     font: {
       size: 1.2rem;

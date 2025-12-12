@@ -1,6 +1,17 @@
+@use "./ui.scss";
 .socials {
+  cursor: pointer;
+  margin-top: auto;
+  align-items: flex-end;
+  font: {
+    size: 1rem;
+  }
   display: flex;
-  
   list-style-type: none;
   gap: 0.5rem;
+  li{
+    &:hover{
+      color: ui.$orange;
+    }
+  }
 }

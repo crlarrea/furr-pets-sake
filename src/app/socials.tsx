@@ -1,5 +1,5 @@
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
-import Booking from "./booking";
+
 import styles from "./styles/socials.module.scss";
 export default function Socials() {
   return (
@@ -12,9 +12,6 @@ export default function Socials() {
       </li>
       <li>
         <FaXTwitter />
-      </li>
-      <li>
-        <Booking />
       </li>
     </ul>
   );

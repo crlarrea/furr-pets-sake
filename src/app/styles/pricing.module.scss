@@ -1,0 +1,34 @@
+@use "./ui.scss";
+.pricing {
+  display: flex;
+  gap: 2rem;
+  overflow: scroll;
+  article {
+    flex: 0 1 33%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    height: 150px;
+    border: 2px solid ghostwhite;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    background-color: ghostwhite;
+    span {
+      color: ui.$orange;
+      font: {
+        weight: 600;
+        size: 1.5rem;
+      }
+    }
+    p {
+      font: {
+        size: 2.5rem;
+        weight:600;
+      }
+    }
+    &:last-of-type{
+        background-color: rgba(ui.$orange,0.3);
+        border-color: ui.$orange;
+    }
+  }
+}

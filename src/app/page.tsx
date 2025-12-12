@@ -3,6 +3,8 @@ import styles from "./styles/home.module.scss";
 import { FaPaw, FaStar } from "react-icons/fa6";
 
 import Link from "next/link";
+import Pricing from "./pricing";
+import Testimonials from "./testimonials";
 
 export default function Home() {
   return (
@@ -10,9 +12,9 @@ export default function Home() {
       <section className={styles.hero}>
         <article className={styles.copy}>
           <span>furr pets sake!</span>
-          <p>Stress-free holiday for you your bundles of fluff!</p>
+          <p>Stress-free holiday for you and your bundles of fluff!</p>
           <Link href="#">book your days</Link>
-          <p className={styles.reviews}>
+          <p className={styles.ratings}>
             <FaStar />
             5-star rating
           </p>
@@ -32,8 +34,21 @@ export default function Home() {
             </span>
           </div>
         </article>
-        <article className={styles.reviews}> reviews</article>
+        <article className={styles.reviews}>
+          <Testimonials/>
+          <div className={styles.thumbnail}>
+            <span>2025/26</span>
+
+            <p>Pet sitting service of the year.</p>
+          </div>
+          <div>
+            <p>trusted by</p>
+            <span>+100</span>
+            <p>pet lovers</p>
+          </div>
+        </article>
       </section>
+      <Pricing/>
     </main>
   );
 }

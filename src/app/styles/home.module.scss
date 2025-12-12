@@ -1,4 +1,10 @@
 @use "ui.scss";
+
+.home{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem;
+}
 .hero {
   display: flex;
   flex-flow: row nowrap;
@@ -20,7 +26,13 @@
   }
   a {
     margin-top: 1rem;
+    border: 1px solid ui.$black;
     background-color: white;
+    &:hover {
+      background-color: ui.$black;
+      color: ui.$white;
+      transition: all 0.3s;
+    }
     align-self: flex-start;
     padding: 1rem 2rem;
     border-radius: 2rem;
@@ -31,7 +43,7 @@
   }
 }
 
-.reviews {
+.ratings {
   margin-top: auto;
   display: inline-flex;
   align-items: center;
@@ -45,6 +57,30 @@
   }
 }
 
+.reviews {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  gap:2rem;
+  span {
+    font: {
+      weight: 800;
+      size: 2rem;
+    }
+  }
+}
+
+.thumbnail{
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  height: 150px;
+  background-color: ui.$black;
+  color: ui.$white;
+  padding: 1rem;
+  span{
+    color: ui.$orange;
+  }
+}
 .heroImage {
   display: flex;
   flex: 1 0 350px;

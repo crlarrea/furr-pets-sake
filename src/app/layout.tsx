@@ -6,6 +6,7 @@ import { Nabla } from "next/font/google";
 import Logo from "./logo";
 import Socials from "./socials";
 import Booking from "./booking";
+import Footer from "./footer";
 export const metadata: Metadata = {
   title: "Furr Pets Sake",
   description: "Pet sitting services.",
@@ -22,9 +23,11 @@ export default function RootLayout({
         <header>
           <Nav />
           <Logo />
-          <Socials />
+          {/* <Socials /> */}
+          <Booking />
         </header>
         {children}
+        <Footer />
       </body>
     </html>
   );
