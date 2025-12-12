@@ -1,0 +1,23 @@
+@use "ui.scss";
+.nav {
+  ul {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+    text: {
+      transform: capitalize;
+    }
+    li {
+      position: relative;
+
+      &:hover {
+        color: ui.$orange;
+      }
+    }
+  }
+  font: {
+    weight: 800;
+  }
+}

@@ -1,0 +1,109 @@
+@use "ui.scss";
+.hero {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2rem;
+}
+
+.copy {
+  padding-top: 4rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  flex: 0 0 30%;
+  span {
+    line-height: 2.5rem;
+    font: {
+      weight: 800;
+      size: 3rem;
+    }
+  }
+  a {
+    margin-top: 1rem;
+    background-color: white;
+    align-self: flex-start;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    font: {
+      weight: 600;
+    }
+  }
+}
+
+.reviews {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font: {
+    weight: 600;
+    size: 1.5rem;
+  }
+  svg {
+    color: ui.$orange;
+  }
+}
+
+.heroImage {
+  display: flex;
+  flex: 1 0 350px;
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  width: 350px;
+  height: 550px;
+  border-radius: 1rem;
+  overflow: hidden;
+  span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    line-height: 0.7rem;
+    font: {
+      weight: 800;
+      size: 0.7rem;
+    }
+    text-transform: uppercase;
+    svg {
+      padding: 0.3rem;
+      border-radius: 0.5rem;
+      color: ui.$white;
+      background-color: ui.$black;
+      font: {
+        size: 1.5rem;
+      }
+    }
+    margin: 1rem;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle at 50% 40%,
+      transparent 40%,
+      ui.$orange 40%
+    );
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    mix-blend-mode: multiply;
+  }
+  img {
+    object-fit: cover;
+
+    // backdrop-filter: blur(5px);
+  }
+}
+
+.reviews {
+  flex: 0 0 20%;
+}
