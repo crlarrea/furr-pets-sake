@@ -10,7 +10,7 @@ export default function Pricing() {
           <p>£12.50</p>
         </div>
         <div className={styles.wrapper}>
-          <Image src="/dog_2.png" fill alt="dog" />
+          <Image src="/dog_2.png" fill alt="dog" sizes="(max-width:1024px) 123px" />
         </div>
       </article>
 

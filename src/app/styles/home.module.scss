@@ -7,7 +7,7 @@
 }
 .hero {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   gap: 2rem;
 }
 
@@ -16,7 +16,7 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
-  flex: 0 0 30%;
+  flex: 1 0 30%;
   span {
     line-height: 2.5rem;
     font: {
@@ -141,5 +141,18 @@
 }
 
 .reviews {
-  flex: 0 0 20%;
+  flex: 1 0 20%;
+}
+
+/* Mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  html{
+    padding-top: 0;
+  }
+  .copy{
+    padding-top: 0;
+  }
+  .hero{
+    justify-content: center;
+  }
 }

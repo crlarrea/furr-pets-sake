@@ -1,5 +1,6 @@
 @use "./ui.scss";
 .booking {
+  flex: 0 0 40px;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -9,12 +10,12 @@
     weight: 600;
     size: 1.2rem;
   }
-  width: 40px;
+  // width: 40px;
   border-radius: 100%;
   aspect-ratio: 1;
   background-color: ui.$black;
   color: ui.$white;
-  &:hover{
+  &:hover {
     background-color: ui.$orange;
   }
 }

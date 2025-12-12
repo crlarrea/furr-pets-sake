@@ -1,12 +1,15 @@
 @use "./ui.scss";
 .pricing {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  overflow: scroll;
   gap: 2rem;
   overflow: scroll;
 }
 
 .card {
-  flex: 0 1 33%;
+  flex: 0 0 320px;
   flex-flow: row-reverse;
   border-radius: 0.5rem;
   height: 150px;
@@ -65,5 +68,19 @@
     font: {
       size: 1.2rem;
     }
+  }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pricing{
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  .pricing{
+    justify-content: flex-start;
   }
 }
