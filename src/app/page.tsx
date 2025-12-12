@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./styles/home.module.scss";
-import { FaPaw, FaStar } from "react-icons/fa6";
+import { FaPaw, FaStar, FaTrophy } from "react-icons/fa6";
 
 import Link from "next/link";
 import Pricing from "./pricing";
@@ -35,11 +35,14 @@ export default function Home() {
           </div>
         </article>
         <article className={styles.reviews}>
-          <Testimonials/>
+          <Testimonials />
           <div className={styles.thumbnail}>
             <span>2025/26</span>
 
             <p>Pet sitting service of the year.</p>
+            <span>
+              <FaTrophy />
+            </span>
           </div>
           <div>
             <p>trusted by</p>
@@ -48,7 +51,7 @@ export default function Home() {
           </div>
         </article>
       </section>
-      <Pricing/>
+      <Pricing />
     </main>
   );
 }

@@ -79,6 +79,12 @@
   padding: 1rem;
   span{
     color: ui.$orange;
+    &:last-of-type{
+      display: block;
+      margin-top: 1rem;
+      align-self: flex-end;
+      
+    }
   }
 }
 .heroImage {
